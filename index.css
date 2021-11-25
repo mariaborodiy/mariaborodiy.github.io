@@ -1,0 +1,289 @@
+*,
+::after,
+::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 24px;
+    line-height: 1.25em;
+    color: #fff;
+    font-weight: 400;
+    background-color: #292929;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+#app {
+    position: relative;
+}
+
+.backlog {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1302px;
+    background: linear-gradient(180deg, #000000 27.19%, rgba(0, 0, 0, 0) 77.19%, rgba(0, 0, 0, 0) 100%);
+}
+
+.container {
+    width: 88%;
+    max-width: 1268px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 72px;
+    line-height: 1.264em;
+}
+
+.header {
+    background-color: #DE0000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__item {
+    margin-left: 60px;
+}
+
+.nav-menu__link {
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+}
+
+.nav-menu__link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width .4s ease;
+}
+
+.nav-menu__link:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    padding: 50px 0 30px;
+}
+
+.hero-offer {
+    max-width: 720px;
+    margin-left: 58px;
+}
+
+.hero-offer__title {
+    margin-bottom: 15px;
+}
+
+.hero-offer__message {
+    font-size: 36px;
+    line-height: 1.25em;
+}
+
+.hero-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 43.75vw;
+    z-index: -1;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-section {
+    padding: 174px 0 0;
+}
+
+.portfolio__title {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-list__item {
+    position: relative;
+    height: 305px;
+    margin-bottom: 70px;
+}
+
+.portfolio-list__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio-list__item:nth-child(3n + 4),
+.portfolio-list__item:first-child {
+    width: 39.66877%;
+}
+
+.portfolio-list__item:nth-child(3n+2) {
+    width: 29.022082019%;
+    margin-left: 5px;
+}
+
+.portfolio-list__item:nth-child(3n) {
+    width: 24.605678%;
+}
+
+.about-section {
+    padding: 71px 0 126px;
+}
+
+.about__title {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.about-wrapper {
+    width: 100%;
+    max-width: 994px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__img {
+    width: 45.1710261%;
+    position: relative;
+}
+
+.about__img::before {
+    content: '';
+    display: block;
+    padding-bottom: 133.407%;
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__content {
+    width: 44.86925%;
+}
+
+.about__content-message {
+    margin-bottom: 75px;
+}
+
+.about__content-list {
+    list-style-type: disc;
+    padding-left: 23px;
+}
+
+.about__content-list li {
+    margin-bottom: 22px;
+}
+
+.contacts-section {
+    padding: 196px 0 219px;
+    background-color: #000;
+}
+
+.contacts__title {
+    margin-bottom: 92px;
+    text-align: center;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list__item {
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 33px;
+}
+
+.social-list__link {
+
+}
+
+.social-list__link svg {
+
+}
+
+.social-list__link svg path {
+    transition: fill .4s ease;
+}
+
+.social-list__link:hover svg path {
+    fill: #DE0000;
+}
